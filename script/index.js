@@ -1,5 +1,5 @@
 /**********1-st task**********/
-console.log('%c 1-st task', 'background: green; color: white; display: block;');
+/*console.log('%c 1-st task', 'background: green; color: white; display: block;');
 var arr1 = [1, -1, 2, -2, 3, -3, 4, -4, 5, -5, 6, -6, 7, -7];
 
 //forEach
@@ -32,7 +32,7 @@ var result1 = arr1.reduce(function(sum, current) {
 }, 0);
 console.log( result1 );
 
-/**********2-nd task**********/
+/!**********2-nd task**********!/
 console.log('%c 2-nd task', 'background: green; color: white; display: block;');
 // Creating array
 var arr = [];
@@ -67,16 +67,37 @@ var result = arr.reduce(function (sum, current) {
 });
 
 console.log({
-    "sumOfAllElements": result,
-    "timeOfCreating": endCreateArr - startCreateArr + "ms",
-    "timeOfSorting": endSort - startSort + "ms",
-    "timeOfReverseSorting": endSortReverse - startSortReverse + "ms"
-});
+    "Сума всіх елементів масиву:": result,
+    "Час створення:": endCreateArr - startCreateArr + "ms",
+    "Час сортування:": endSort - startSort + "ms",
+    "Час зворотнього сортування:": endSortReverse - startSortReverse + "ms"
+});*/
 
 /**********3-rd task**********/
 console.log('%c 3-rd task', 'background: green; color: white; display: block;');
 // Initial conditions
-var matrixA = [60, 80, 100];
+// var matrixA = [60, 80, 100];
+
+function matrixACreate(){
+    var matrixA = [];
+    for (var i = 0; i < 3; i++){
+        var indexA = document.getElementsByName('indA')[i].value;
+        var numA = parseInt(indexA);
+        matrixA.push(numA);
+    }
+    console.log(matrixA);
+}
+function matrixBCreate() {
+    var matrixB = [];
+    for (var j = 0; j < 4; j++){
+        var indexB = document.getElementsByName('indB')[j].value;
+        var numB = parseInt(indexB);
+        matrixB.push(numB);
+    }
+    console.log(matrixB);
+}
+/*
+
 var matrixB = [40, 60, 80, 60];
 var matrixC = [ [1, 3, 4, 2],
                 [4, 5, 8, 3],
@@ -108,3 +129,4 @@ for (var i = 0; i < matrixA.length; i++) {     //initialization rows
     }
     console.log( matrixD[i] );                  //I leave it like this for better clarity
 }
+*/

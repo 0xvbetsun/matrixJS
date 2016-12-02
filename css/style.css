@@ -1,0 +1,85 @@
+.container{
+    margin:0 auto;
+    max-width: 760px;
+}
+.button {
+    display: inline-block;
+    margin: 15px 5px;
+    border-radius: 6px;
+    background-color: #4c4c4c;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+input{
+    width: 60px;
+    outline: none;
+}
+input[type='text']::-webkit-input-placeholder{
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+}
+input[type='text']::-moz-placeholder{
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+}
+input[type='text']:-moz-placeholder{
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+}
+input[type='text']:-ms-input-placeholder{
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+}
+input[type='text']:focus::-webkit-input-placeholder{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+input[type='text']:focus::-webkit-input-placeholder{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+input[type='text']:focus::-moz-placeholder{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+input[type='text']:focus:-moz-placeholder{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+input[type='text']:focus:-ms-input-placeholder{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
