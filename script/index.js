@@ -77,9 +77,10 @@ console.log({
 console.log('%c 3-rd task', 'background: green; color: white; display: block;');
 // Initial conditions
 // var matrixA = [60, 80, 100];
-
+var matrixA = [];
+var matrixB = [];
+var matrixC = [];
 function matrixACreate(){
-    var matrixA = [];
     for (var i = 0; i < 3; i++){
         var indexA = document.getElementsByName('indA')[i].value;
         var numA = parseInt(indexA);
@@ -88,13 +89,24 @@ function matrixACreate(){
     console.log(matrixA);
 }
 function matrixBCreate() {
-    var matrixB = [];
     for (var j = 0; j < 4; j++){
         var indexB = document.getElementsByName('indB')[j].value;
         var numB = parseInt(indexB);
         matrixB.push(numB);
     }
     console.log(matrixB);
+}
+function matrixCCreate() {
+    for(var i = 0; i < matrixA.length; i++){
+        var matrix = [];
+        for( var j = matrixB.length*i; j < matrixB.length*i+matrixB.length; j++){
+            var indexC = document.getElementsByName('indC')[j].value;
+            var numC = parseInt(indexC);
+            matrix.push(numC);
+        }
+        matrixC.push(matrix);
+    }
+    console.log(matrixC);
 }
 /*
 

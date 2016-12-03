@@ -11,47 +11,53 @@
 <body>
 <div class="container">
     <h2>Рішення транспортної задачі:</h2>
+    <div class="init-cond">
     <p>Матриця А:</p>
-    <table>
+    <table class="matrix">
         <tr>
-            <td><input name="indA" type="text" placeholder="60"></td>
-            <td><input name="indA" type="text" placeholder="80"></td>
-            <td><input name="indA" type="text" placeholder="100"></td>
+            <td><input name="indA" type="text" placeholder="0"></td>
+            <td><input name="indA" type="text" placeholder="0"></td>
+            <td><input name="indA" type="text" placeholder="0"></td>
         </tr>
     </table>
     <button class="button" onclick="matrixACreate(this)"><span>Підтвердити</span></button>
+    </div>
+    <div class="init-cond">
     <p>Матриця В:</p>
-    <table>
+    <table class="matrix">
         <tr>
-            <td><input name="indB" type="text" placeholder="40"></td>
-            <td><input name="indB" type="text" placeholder="60"></td>
-            <td><input name="indB" type="text" placeholder="80"></td>
-            <td><input name="indB" type="text" placeholder="60"></td>
+            <td><input name="indB" type="text" placeholder="0"></td>
+            <td><input name="indB" type="text" placeholder="0"></td>
+            <td><input name="indB" type="text" placeholder="0"></td>
+            <td><input name="indB" type="text" placeholder="0"></td>
         </tr>
-    </table>
+    </table >
     <button class="button" onclick="matrixBCreate(this)"><span>Підтвердити</span></button>
+    </div>
+    <div class="init-cond">
     <p>Матриця С:</p>
-    <table>
+    <table class="matrix">
         <tr>
-            <td>1</td>
-            <td>3</td>
-            <td>4</td>
-            <td>2</td>
+            <td><input name="indC" type="text" placeholder="0"></td>
+            <td><input name="indC" type="text" placeholder="0"></td>
+            <td><input name="indC" type="text" placeholder="0"></td>
+            <td><input name="indC" type="text" placeholder="0"></td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>8</td>
-            <td>3</td>
+            <td><input name="indC" type="text" placeholder="0"></td>
+            <td><input name="indC" type="text" placeholder="0"></td>
+            <td><input name="indC" type="text" placeholder="0"></td>
+            <td><input name="indC" type="text" placeholder="0"></td>
         </tr>
         <tr>
-            <td>2</td>
-            <td>3</td>
-            <td>6</td>
-            <td>7</td>
+            <td><input name="indC" type="text" placeholder="0"></td>
+            <td><input name="indC" type="text" placeholder="0"></td>
+            <td><input name="indC" type="text" placeholder="0"></td>
+            <td><input name="indC" type="text" placeholder="0"></td>
         </tr>
     </table>
-    <button class="button" ><span>Підтвердити</span></button>
+    <button class="button" onclick="matrixCCreate(this)"><span>Підтвердити</span></button>
+    </div>
 </div>
 <script src="script/index.js"></script>
 </body>

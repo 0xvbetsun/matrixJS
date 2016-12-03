@@ -1,51 +1,40 @@
 .container{
     margin:0 auto;
-    max-width: 760px;
+    max-width: 720px;
 }
-.button {
-    display: inline-block;
-    margin: 15px 5px;
-    border-radius: 6px;
-    background-color: #4c4c4c;
-    border: none;
-    outline: none;
-    color: #FFFFFF;
+body{
+    background-color: #F5F0F1;
+}
+h1,
+h2,
+p,
+span{
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+h2{
+    font-weight: 600;
     text-align: center;
-    font-size: 16px;
-    padding: 10px;
-    width: 150px;
-    transition: all 0.5s;
-    cursor: pointer;
+    text-shadow: 2px 2px #fff;
 }
-
-.button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+p{
+    font-size: 18px;
+    font-weight: 500;
 }
-
-.button span:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.button:hover span {
-    padding-right: 25px;
-}
-
-.button:hover span:after {
-    opacity: 1;
-    right: 0;
+.matrix{
+    background: #92B8CD;
+    padding: 5px 15px;
+    border: 2px solid #7693A8;
+    border-radius: 10px 40px;
+    box-shadow: 5px 5px 20px #9F9F9F;
 }
 
 input{
-    width: 60px;
+    padding-left: 5px;
+    width: 50px;
     outline: none;
+    border: 2px solid #9F9F9F;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #888888;
 }
 input[type='text']::-webkit-input-placeholder{
     opacity: 0.6;
@@ -82,4 +71,52 @@ input[type='text']:focus:-moz-placeholder{
 input[type='text']:focus:-ms-input-placeholder{
     opacity: 0;
     transition: opacity 0.5s ease;
+}
+
+.button {
+    display: inline-block;
+    margin: 15px 5px;
+    border-radius: 6px 25px;
+    background-color: #4c4c4c;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px #9F9F9F;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.init-cond{
+    float: left;
+    margin: 0 auto;
+    padding: 10px 25px;
+    display: inline-block;
 }
