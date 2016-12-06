@@ -102,7 +102,6 @@ input[type='text']:focus:-ms-input-placeholder{
     opacity: 0;
     transition: opacity 0.5s ease;
 }
-
 .button {
     display: inline-block;
     margin: 15px 5px;
@@ -119,14 +118,12 @@ input[type='text']:focus:-ms-input-placeholder{
     cursor: pointer;
     box-shadow: 5px 5px 20px #9F9F9F;
 }
-
 .button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
-
 .button span:after {
     content: '»';
     position: absolute;
@@ -135,11 +132,9 @@ input[type='text']:focus:-ms-input-placeholder{
     right: -20px;
     transition: 0.5s;
 }
-
 .button:hover span {
     padding-right: 25px;
 }
-
 .button:hover span:after {
     opacity: 1;
     right: 0;
