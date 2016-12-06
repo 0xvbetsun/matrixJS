@@ -1,0 +1,99 @@
+@media screen and (min-width: 990px) {
+    .container{
+        width: 1240px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .container{
+        width: 100%;
+    }
+    .btn-group{
+        margin: 10px 25%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .btn-group{
+        margin: 10px 20%;
+    }
+    .init-cond{
+        margin: 10px 5%;
+    }
+    div{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 640px){
+    #supportPlan td{
+        padding: 5px;
+        width: 35px;
+        height: 25px;
+        font-size: 20px;
+    }
+    #supportPlan{
+        border-radius: 120px 0 0;
+    }
+}
+@media screen and (max-width: 480px){
+    h2{
+        font-size: 18px;
+    }
+    h3,
+    .solve h3{
+        font-size: 16px;
+    }
+    p{
+        font-size: 14px;
+    }
+    #supportPlan{
+        margin: 10px auto;
+        border-radius: 100px 0 0;
+    }
+    #supportPlan td{
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+    }
+    .btn-group{
+        margin: 10px 30%;
+    }
+    .init-cond{
+        padding: 10px 10%;
+    }
+    .solve{
+        margin: 0;
+        padding: 10px 15%;
+    }
+    input{
+        width: 40px;
+        border-radius: 5px;
+    }
+    .button{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 375px){
+    .matrix{
+
+    }
+    .container{
+        max-width: 320px;
+    }
+    input{
+        width: 25px;
+    }
+    .solve{
+        margin: 0;
+        padding: 10px 10%;
+    }
+    #supportPlan{
+        border-radius: 50px 0 0;
+    }
+
+}
+@media screen and (min-width: 320px){
+    #supportPlan td{
+        width: 15px;
+        height: 15px;
+        font-size:14px;
+    }
+}

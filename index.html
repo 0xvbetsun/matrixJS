@@ -11,17 +11,19 @@
 <body>
 <div class="container">
     <h2>Обчислення часу створення/сортування</h2>
-    <p class="arrInp"></p>
-    <p class="arrTime"></p>
+    <div class="btn-group">
     <button class="button" onclick="startCreate()"><span>Створити</span></button>
-    <p class="arrInp"></p>
-    <p class="arrTime"></p>
     <button class="button" onclick="startSortArr()"><span>Сортувати</span></button>
+    <button class="button" onclick="reverseSort()"><span>Зворотнє сортування</span></button>
+    <button class="button" onclick="sumOfAll()"><span>Сума елементів</span></button>
+    </div>
     <p class="arrInp"></p>
     <p class="arrTime"></p>
-    <button class="button" onclick="reverseSort()"><span>Зворотнє сортування</span></button>
+    <p class="arrInp"></p>
+    <p class="arrTime"></p>
+    <p class="arrInp"></p>
+    <p class="arrTime"></p>
     <p class="sum"></p>
-    <button class="button" onclick="sumOfAll()"><span>Сума елементів</span></button>
     <h2>Рішення транспортної задачі:</h2>
     <div class="init-cond">
     <p>Матриця А:</p>
@@ -46,6 +48,7 @@
     </table >
     <button class="button" onclick="matrixBCreate()"><span>Підтвердити</span></button>
     </div>
+
     <div class="init-cond">
     <p>Матриця С:</p>
     <table class="matrix">
@@ -70,6 +73,7 @@
     </table>
     <button class="button" onclick="matrixCCreate()"><span>Підтвердити</span></button>
     </div>
+
     <div class="solve">
     <h3>Матриця опорного плану</h3>
     <table id="supportPlan">

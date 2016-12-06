@@ -1,6 +1,6 @@
 .container{
-    margin:0 auto;
-    max-width: 720px;
+    margin: 0 auto;
+    max-width: 960px;
 }
 body{
     background-color: #F5F0F1;
@@ -14,18 +14,24 @@ span{
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 h2,
-h3{
+h3,
+.solve h3{
+    padding: 0 10px;
     font-weight: 600;
     text-align: center;
     text-shadow: 2px 2px #fff;
 }
-
 p{
     font-size: 18px;
     font-weight: 500;
 }
 table{
     border-spacing: 0;
+}
+.btn-group{
+    margin: 10px 15%;
+    display: inline-block;
+    clear: both;
 }
 .matrix{
     background: #92B8CD;
@@ -138,13 +144,16 @@ input[type='text']:focus:-ms-input-placeholder{
     opacity: 1;
     right: 0;
 }
-.init-cond{
-    float: left;
+.init-cond,
+.solve{
     margin: 0 auto;
     padding: 10px 25px;
     display: inline-block;
 
 }
+.init-cond{
+    float: left;
+}
 .solve{
-    clear: left;
+    padding: 10px 25%;
 }
