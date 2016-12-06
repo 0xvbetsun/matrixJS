@@ -7,18 +7,25 @@ body{
 }
 h1,
 h2,
+h3,
 p,
+td,
 span{
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
-h2{
+h2,
+h3{
     font-weight: 600;
     text-align: center;
     text-shadow: 2px 2px #fff;
 }
+
 p{
     font-size: 18px;
     font-weight: 500;
+}
+table{
+    border-spacing: 0;
 }
 .matrix{
     background: #92B8CD;
@@ -27,7 +34,24 @@ p{
     border-radius: 10px 40px;
     box-shadow: 5px 5px 20px #9F9F9F;
 }
-
+#supportPlan{
+    margin:10px auto;
+    background: #92B8CD;
+    border: 2px solid #4c4c4c;
+    border-radius: 180px 0 0;
+    box-shadow: 5px 5px 20px #9F9F9F;
+    font-size: 22px;
+}
+#supportPlan td{
+    padding: 10px;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+}
+.param{
+    color: #fff;
+    background-color: #4c4c4c;
+}
 input{
     padding-left: 5px;
     width: 50px;
@@ -119,4 +143,8 @@ input[type='text']:focus:-ms-input-placeholder{
     margin: 0 auto;
     padding: 10px 25px;
     display: inline-block;
+
+}
+.solve{
+    clear: left;
 }
